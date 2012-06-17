@@ -20,8 +20,9 @@ Having issues with a demo? Want to contribute? Raise a ticket and/or submit a pu
 
 ## Adding a demo ##
 1. Clone the 000-apptemplate folder and rename it via the naming convention
-2. Update the current demos section list above with the folder name
-3. Pull request
+2. Update the version of batman (I'll try and keep the version in the template up to date as much as possible)
+3. Update the current demos section list above with the folder name
+4. Pull request
 
 ## Folder convention 
 See the 000-apptemplate folder in the repo
