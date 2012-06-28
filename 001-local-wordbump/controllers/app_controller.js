@@ -14,11 +14,11 @@
     AppController.prototype.routingKey = 'app';
 
     AppController.prototype.index = function() {
-      this.set('wordOne', new Word({
+      this.set('wordOne', new WordBump.Word({
         name: 'Ninja',
         rank: 0
       }));
-      return this.set('wordTwo', new Word({
+      return this.set('wordTwo', new WordBump.Word({
         name: 'Waffle',
         rank: 0
       }));

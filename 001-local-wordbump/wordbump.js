@@ -12,15 +12,13 @@
       return WordBump.__super__.constructor.apply(this, arguments);
     }
 
-    Batman.ViewStore.prefix = 'zprojects/batmanjs-demos/001-local-wordbump/views';
+    Batman.ViewStore.prefix = 'views';
 
     WordBump.controller('app');
 
     WordBump.model('word');
 
     WordBump.root('app#index');
-
-    WordBump.route('app', 'app#index');
 
     WordBump.on('run', function() {
       return typeof console !== "undefined" && console !== null ? console.log("Running ....") : void 0;

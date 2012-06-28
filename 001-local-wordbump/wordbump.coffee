@@ -1,13 +1,12 @@
 window.WordBump = class WordBump extends Batman.App
-  #C:\zprojects\batmanjs-demos\001-local-wordbump\views\app\index.html
-  Batman.ViewStore.prefix = 'zprojects/batmanjs-demos/001-local-wordbump/views'
+
+  Batman.ViewStore.prefix = 'views'
 
   # loads up controllers & model
   @controller 'app'
   @model 'word'
 
   @root 'app#index'
-  @route 'app', 'app#index'
 
   @on 'run', ->
     console?.log "Running ...."
