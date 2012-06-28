@@ -1,7 +1,5 @@
 window.WordBump = class WordBump extends Batman.App
 
-  Batman.ViewStore.prefix = 'views'
-
   # loads up controllers & model
   @controller 'app'
   @model 'word'

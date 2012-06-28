@@ -12,8 +12,6 @@
       return WordBump.__super__.constructor.apply(this, arguments);
     }
 
-    Batman.ViewStore.prefix = 'views';
-
     WordBump.controller('app');
 
     WordBump.model('word');
