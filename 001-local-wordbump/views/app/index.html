@@ -1,1 +1,15 @@
-index!!
+<div class="words">
+  <div class="one">
+    <span data-bind="wordOne"></span>
+  </div>
+  <div class="two">
+    <span data-bind="wordTwo"></span>
+  </div>
+</div>
+
+
+<div class="ranking">
+  <div data-foreach-word="wordList">
+    <span data-bind="word.name"></span>
+  </div>
+</div>

@@ -13,7 +13,16 @@
 
     AppController.prototype.routingKey = 'app';
 
-    AppController.prototype.index = function() {};
+    AppController.prototype.index = function() {
+      this.set('wordOne', new Word({
+        name: 'Ninja',
+        rank: 0
+      }));
+      return this.set('wordTwo', new Word({
+        name: 'Waffle',
+        rank: 0
+      }));
+    };
 
     return AppController;
 
