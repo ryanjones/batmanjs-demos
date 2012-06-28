@@ -14,14 +14,29 @@
     AppController.prototype.routingKey = 'app';
 
     AppController.prototype.index = function() {
-      this.set('wordOne', new WordBump.Word({
-        name: 'Ninja',
-        rank: 0
-      }));
-      return this.set('wordTwo', new WordBump.Word({
-        name: 'Waffle',
-        rank: 0
-      }));
+      return this.set('wordList', this.fillWordList());
+    };
+
+    AppController.prototype.bumpUpOne = function() {
+      return this.wordOne.set('rank', this.wordOne.get('rank') + 1);
+    };
+
+    AppController.prototype.bumpUpTwo = function() {
+      return this.wordTwo.set('rank', this.wordTwo.get('rank') + 1);
+    };
+
+    AppController.prototype.fillWordList = function() {
+      var word, wordList, words, _i, _len;
+      wordList = [];
+      words = ['waffle', 'batman', 'ninja', 'rock', 'paper', 'tree'];
+      for (_i = 0, _len = words.length; _i < _len; _i++) {
+        word = words[_i];
+        wordList.push(new WordBump.Word({
+          name: word,
+          rank: 0
+        }));
+      }
+      return wordList;
     };
 
     return AppController;
