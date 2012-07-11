@@ -17,6 +17,12 @@
 
     Word.encode('name', 'rank');
 
+    Word.accessor('addOneHundred', {
+      get: function() {
+        return this.get('rank') + 100;
+      }
+    });
+
     return Word;
 
   })(Batman.Model);

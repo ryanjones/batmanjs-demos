@@ -14,7 +14,33 @@
     AppController.prototype.routingKey = 'app';
 
     AppController.prototype.index = function() {
-      return this.set('wordList', this.fillWordList());
+      this.set('wordList', this.fillWordList());
+      return this.setInitialWords();
+    };
+
+    AppController.prototype.fillWordList = function() {
+      var word, wordList, words, _i, _len;
+      wordList = new Batman.Set;
+      words = ['waffle', 'batman', 'ninja', 'rock', 'paper', 'tree', 'fight', 'tall', 'yellow', 'blue'];
+      for (_i = 0, _len = words.length; _i < _len; _i++) {
+        word = words[_i];
+        wordList.add(new WordBump.Word({
+          name: word,
+          rank: 0
+        }));
+      }
+      return wordList;
+    };
+
+    AppController.prototype.setInitialWords = function() {
+      var wordOneIndex, wordTwoIndex;
+      wordOneIndex = Math.floor(Math.random() * 10);
+      wordTwoIndex = Math.floor(Math.random() * 10);
+      while (!(wordOneIndex !== wordTwoIndex)) {
+        wordTwoIndex = Math.floor(Math.random() * 10);
+      }
+      this.set('wordOne', this.get('wordList').toArray()[wordOneIndex]);
+      return this.set('wordTwo', this.get('wordList').toArray()[wordTwoIndex]);
     };
 
     AppController.prototype.bumpUpOne = function() {
@@ -23,20 +49,6 @@
 
     AppController.prototype.bumpUpTwo = function() {
       return this.wordTwo.set('rank', this.wordTwo.get('rank') + 1);
-    };
-
-    AppController.prototype.fillWordList = function() {
-      var word, wordList, words, _i, _len;
-      wordList = [];
-      words = ['waffle', 'batman', 'ninja', 'rock', 'paper', 'tree'];
-      for (_i = 0, _len = words.length; _i < _len; _i++) {
-        word = words[_i];
-        wordList.push(new WordBump.Word({
-          name: word,
-          rank: 0
-        }));
-      }
-      return wordList;
     };
 
     return AppController;

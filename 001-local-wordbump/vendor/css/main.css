@@ -1,4 +1,12 @@
 #main_container {
-  padding-top: 45px;
-  background-color: #DDD; }
+     background-color: #DDD;
+}
 
+.words {
+    background-color: #FFF;
+    height:100px;
+}
+
+.ranking {
+    background-color: #EEE;
+}

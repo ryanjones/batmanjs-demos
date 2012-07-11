@@ -1,3 +1,7 @@
+<div>
+  Click which word you prefer:
+</div>
+
 <div class="words">
   <div class="one">
     <span data-event-click="bumpUpOne" data-bind="wordOne.name"></span>
@@ -8,7 +12,8 @@
 </div>
 
 <div class="ranking">
-  <div data-foreach-word="wordList">
+  <div data-foreach-word="wordList.sortedByDescending.rank">
     <span data-bind="word.name"></span>
+    <span data-bind="word.rank"></span>
   </div>
 </div>
