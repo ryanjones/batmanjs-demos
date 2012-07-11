@@ -2,7 +2,8 @@
 
 ---
 
-Allow you to pick a word that you like best. The best words will fly to the top in the sidebar
+Allow you to pick a word that you like best. The words you like best will end up at the top.
+This is a very basic example of batman.js using localstorage.
 
 ## batman.js version ##
 0.10.0
