@@ -2,7 +2,7 @@
 
 ---
 
-Allow you to pick a word that you like best. The words you like best will end up at the top.
+Allow you to pick a word that you like best. The words you like best will end up at the top.  
 This is a very basic example of batman.js using localstorage.
 
 ## batman.js version ##
