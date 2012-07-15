@@ -31,19 +31,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="batchat.js.coffee" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="batchat.js.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/batchat.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.2386609">
+            <state line="7" column="0" selection-start="163" selection-end="163" vertical-scroll-proportion="0.12850972">
               <folding />
             </state>
           </provider>
@@ -568,16 +559,16 @@
         <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/batchat.js.coffee">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
+        <state line="4" column="24" selection-start="56" selection-end="56" vertical-scroll-proportion="0.07343412">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/batchat.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.2386609">
+        <state line="7" column="0" selection-start="163" selection-end="163" vertical-scroll-proportion="0.12850972">
           <folding />
         </state>
       </provider>
