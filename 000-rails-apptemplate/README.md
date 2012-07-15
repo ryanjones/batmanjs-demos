@@ -1,8 +1,8 @@
-# 002-rails-batchat-ruby #
+# 000-rails-apptemplate #
 
 ---
 
-Allows you to chat with another user. You can also see if someone is online. Names are randomly generated.
+Template for rails setup
 
 ## batman.js version ##
 0.10.0
