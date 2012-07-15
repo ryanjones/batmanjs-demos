@@ -19,5 +19,5 @@ end
 
 gem 'jquery-rails'
 gem 'active_model_serializers', :git => 'git://github.com/josevalim/active_model_serializers.git'
-
+gem 'haml'
 gem 'batman-rails'

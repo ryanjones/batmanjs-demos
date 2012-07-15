@@ -1,6 +1,6 @@
 window.Batchat = class Batchat extends Batman.App
 
-  @root 'pages#index'
+  @root 'app#index'
 
   @on 'run', ->
     console?.log "Running ...."
