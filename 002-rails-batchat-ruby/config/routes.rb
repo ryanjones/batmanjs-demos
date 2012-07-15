@@ -1,5 +1,6 @@
 Batchat::Application.routes.draw do
   resources :users
+  resources :messages
   root :to => 'pages#index'
 
   # The priority is based upon order of creation:
