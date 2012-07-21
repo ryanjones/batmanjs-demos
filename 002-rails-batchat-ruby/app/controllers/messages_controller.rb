@@ -2,7 +2,7 @@ class MessagesController < ApplicationController
   respond_to :json
 
   def index
-    respond_with Message.all
+    respond_with Message.last(10)
   end
 
   def create

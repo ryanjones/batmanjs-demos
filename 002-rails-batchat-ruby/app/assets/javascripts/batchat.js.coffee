@@ -2,6 +2,7 @@ window.Batchat = class Batchat extends Batman.App
   Batman.ViewStore.prefix = 'assets/views'
 
   @root 'app#index'
+  @route 'app', 'app#index'
 
   @on 'run', ->
     console?.log "Running ...."
@@ -22,3 +23,4 @@ window.Batchat = class Batchat extends Batman.App
 
   @flashSuccess: (message) -> @set 'flash.success', message
   @flashError: (message) ->  @set 'flash.error', message
+
