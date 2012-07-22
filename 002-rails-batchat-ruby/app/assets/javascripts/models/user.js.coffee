@@ -2,6 +2,6 @@ class Batchat.User extends Batman.Model
   @resourceName: 'user'
 
   @persist Batman.RailsStorage
-  @encode 'name'
+  @encode 'name', 'logged_in'
 
-  @validate 'name', presence: yes
+  @validate 'name', 'logged_in', presence: yes

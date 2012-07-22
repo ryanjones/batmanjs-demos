@@ -2,7 +2,15 @@ class UsersController < ApplicationController
   respond_to :json
 
   def index
-    respond_with User.all
+    User.check_expiry
+    respond_with User.where(:logged_in => true)
+  end
+
+  def update
+    @user = User.find(params[:id])
+    @user.updated_at = DateTime.now
+    @user.save!
+    respond_with @user
   end
 
   def create
