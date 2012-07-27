@@ -8,7 +8,8 @@ Having issues with a demo? Want to contribute? Raise a ticket and/or submit a pu
 
 ## Current demos ###
 
-001-local-wordbump
+001-local-wordbump  
+002-rails-batchat-ruby
 
 ## Submission rules ###
 1. No single page apps. All files need to be in their respected folder (see folder convention)
