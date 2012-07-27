@@ -1,6 +1,9 @@
 FactoryGirl.define do
   factory :message do
     content "blah"
-    user
+  end
+
+  factory :invalid_message, :parent => :message  do |f|
+    content nil
   end
 end

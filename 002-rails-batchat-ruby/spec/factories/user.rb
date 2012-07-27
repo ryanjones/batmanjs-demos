@@ -1,6 +1,10 @@
 FactoryGirl.define do
-  factory :user do
-    name "Fake"
-    logged_in true
+  factory :user do |f|
+    f.name "Fake"
+    f.logged_in true
+  end
+
+  factory :invalid_user, :parent => :user do |f|
+    f.name nil
   end
 end

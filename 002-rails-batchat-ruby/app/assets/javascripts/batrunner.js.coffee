@@ -7,10 +7,16 @@ jQuery ->
 
   # start looping and checking for new messages
   setInterval( ->
+    # add any new messages that people have sent
     Batchat.get('controllers.app').addNewMessages()
+    # move the window down
+    Batchat.Helper.Scroll.down()
   , 2000)
 
   # check if users have left, or joined (and clean up appropriately)
   setInterval( ->
+    # clean up the users
     Batchat.get('controllers.app').cleanUpUsers()
+    # move the window down
+    Batchat.Helper.Scroll.down()
   , 10000)

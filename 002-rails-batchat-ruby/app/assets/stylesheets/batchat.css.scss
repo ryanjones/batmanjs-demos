@@ -3,8 +3,14 @@
 #main_container {
   padding-top:45px;
   background-color:#f5f5f5;
+
+  .messageForm {
+    margin-top: 20px;
+  }
+
+  .messages {
+    height: 200px;
+    overflow: auto;
+  }
 }
 
-.messageForm {
-  margin-top: 20px;
-}

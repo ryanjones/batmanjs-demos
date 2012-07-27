@@ -6,18 +6,17 @@ class Batchat.AppController extends Batman.Controller
     @populate()
     # create a new message so the user can punch it in
     @set 'newMessage', new Batchat.Message()
-
     # create a new user and save it
     @set 'user', new Batchat.User({name:Math.ceil(Math.random()*100000), logged_in: true})
     @get('user').save()
-
     # since we just joined we can fire a user refresh (we know there's a new user)
     @cleanUpUsers()
 
 
   createMessage: ->
     # save the users message in the DB
-    @get('newMessage').save (err, message) =>
+    @get('newMessage').updateAttributes(user: @get('user'))
+    @get('newMessage').save (err, mess) =>
       if err
         throw err unless err instanceof Batman.ErrorsSet
       else
@@ -47,7 +46,7 @@ class Batchat.AppController extends Batman.Controller
 
   cleanUpUsers: ->
     # keep updating the logged in flag so it shows we're logged in
-    @get('user').updateAttributes().save()
+    @get('user').updateAttributes(logged_in:true).save()
 
     # append new users into the DOM
     Batchat.User.load (err,results) =>
